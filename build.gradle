@@ -25,7 +25,7 @@ task link(type: Exec) {
     workingDir 'build'
 
     commandLine "${java_home}/bin/jlink", '--module-path', "libs${File.pathSeparatorChar}${java_home}/jmods",
-            '--add-modules', 'gitstats', '--launcher', 'gitstats=gitstats/com.mikemcgarr.Main', '--output', "dist/gitstats", '--strip-debug',
+            '--add-modules', 'cmdlineapp', '--launcher', 'cmdlineapp=cmdlineapp/com.mikemcgarr.Main', '--output', "dist/cmdlineapp", '--strip-debug',
             '--compress=2', '--no-header-files', '--no-man-pages'
 }
 
